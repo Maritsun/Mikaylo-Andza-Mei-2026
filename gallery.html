@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Web Profil</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ff7b54;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: tomato;
+        }
+
+        .deskripsi {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px 15px 5px;
+            color: #333;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="achievement.html">Achievement</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h1>Gallery Saya</h1>
+
+        <p class="deskripsi">
+            Halaman ini berisi beberapa kegiatan dan hal yang saya sukai.
+        </p>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="img/programming.jpeg" alt="Coding">
+                <h3>Coding</h3>
+                <p>Saya suka iseng coding saat waktu luang untuk hiburan.</p>
+            </div>
+
+            <div class="card">
+                <audio controls style="width: 100%; margin-top: 15px;">
+                <source src="img/Ngoni.mp3" type="audio/mpeg">
+                </audio>
+                <h3>Mendengarkan Musik</h3>
+                <p> Musik membantu saya lebih santai dan semangat belajar.</p>
+            </div>
+            <div class="card">
+                <img src="img/133968140745866453.jpg" alt="Kakaktua">
+                <h3>Foto andalan saya di folder Coding</h3>
+                <p>Saya suka burung kakaktua ini.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mikaylo Andza</p>
+    </footer>
+
+</body>
+</html>

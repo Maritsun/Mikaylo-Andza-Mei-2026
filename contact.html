@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontak - Web Profil</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ff7b54;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ff7b54;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .radio-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            background-color: #ff7b54;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e85a2f;
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            color: white;
+            margin: 0;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="achievement.html">Achievement</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <h1>Hubungi Saya</h1>
+
+        <p>
+            Silakan isi formulir di bawah ini untuk menghubungi saya
+        </p>
+
+        <form action="proses.php" method="POST">
+
+            <label>Nama</label>
+            <input type="text" name="nama" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Jenis Kelamin</label>
+
+            <div class="radio-group">
+
+                <input type="radio" name="jk" value="L">
+                Laki-laki
+
+                <input type="radio" name="jk" value="P">
+                Perempuan
+
+            </div>
+
+            <label>Pesan Anda</label>
+
+            <textarea name="pesan" rows="5"></textarea>
+
+            <button type="submit">
+                Kirim Data
+            </button>
+
+        </form>
+
+    </div>
+    <footer>
+        <p>&copy; 2026 Mikaylo Andza</p>
+    </footer>
+
+</body>
+
+</html>
