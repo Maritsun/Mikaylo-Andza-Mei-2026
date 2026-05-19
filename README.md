@@ -1,1 +1,0 @@
-# Mikaylo-Andza-Juli-2026
